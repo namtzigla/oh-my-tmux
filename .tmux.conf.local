@@ -238,9 +238,10 @@ set -g history-limit 10000
 
 #用-|切分panel, 直观
 unbind '"'
-bind - splitw -v
 unbind %
-bind \ splitw -h
+
+bind - splitw -v
+bind \\ splitw -h
 
 #使用组合键直接选择panel
 bind -n C-i select-pane -U
